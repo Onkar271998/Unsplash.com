@@ -7,7 +7,7 @@ import Signup from "./Signup";
 function AllRoutes(){
     return(
         <>
-        <Navbar/>
+
         <Routes>
         <Route path="/" element={<Home/>}></Route>
             <Route path="/login" element={<Login/>}></Route>

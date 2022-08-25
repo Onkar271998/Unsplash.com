@@ -4,6 +4,7 @@ import { useEffect } from "react";
 import { useState } from "react";
 import "./Home.css"
 import MiddleHome from "./MiddleHome";
+import Navbar from "./Navbar";
 function Home() {
   const [data, setData] = useState([]);
 
@@ -23,7 +24,8 @@ function Home() {
   };
 
   return (
-    <> 
+    <>    
+    <Navbar/>
            <div>
            <MiddleHome/>
 

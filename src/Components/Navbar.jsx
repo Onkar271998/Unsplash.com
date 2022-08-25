@@ -24,7 +24,7 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import { SearchIcon } from "@chakra-ui/icons";
 import "./Navbar.css";
-import {HamburgerIcon} from "@chakra-ui/icons"
+import { HamburgerIcon } from "@chakra-ui/icons";
 //   return (
 //     <> <Box>
 //       <SimpleGrid
@@ -156,15 +156,16 @@ function Navbar() {
           <div>
             <Link to="/login">Log in</Link>
           </div>
-         
+          <div>/</div>
           <div>
             <Link to="/signup">Sign Up</Link>
           </div>
+
           <div>
             <Button>Submit a photo</Button>
           </div>
           <div>
-          <HamburgerIcon />
+            <HamburgerIcon />
           </div>
         </div>
       </div>
