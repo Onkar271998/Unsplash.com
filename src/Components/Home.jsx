@@ -36,7 +36,7 @@ function Home() {
            
               <img  src={e.urls.raw} alt="img" />
               
-            
+                  
        
           ))}
           </div>
