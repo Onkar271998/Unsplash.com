@@ -5,6 +5,7 @@ import { useState } from "react";
 import "./Home.css"
 import MiddleHome from "./MiddleHome";
 import Navbar from "./Navbar";
+import Searchbox from "./Searchbox";
 function Home() {
   const [data, setData] = useState([]);
 
@@ -26,11 +27,11 @@ function Home() {
   return (
     <>    
     <Navbar/>
-           <div>
-           <MiddleHome/>
+           
+           {/* <MiddleHome /> */}
 
-           </div>
-  
+           
+  <Searchbox/>
         
         <div className="box" >
           {data?.map((e) => (

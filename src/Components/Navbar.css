@@ -1,7 +1,11 @@
-    
 
 .Nav-Div{
       display: flex;
       align-items: center;
-      
 }
+
+.Hamburg{
+      position: absolute;
+      margin-left: -30%;
+
+ }

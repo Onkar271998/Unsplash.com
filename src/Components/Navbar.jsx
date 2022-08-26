@@ -23,8 +23,11 @@ import {
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { SearchIcon } from "@chakra-ui/icons";
-import "./Navbar.css";
 import { HamburgerIcon } from "@chakra-ui/icons";
+import "./Navbar.css";
+import Dropdown from "./Dropdown";
+import Navbar2 from "./Navbar2";
+
 //   return (
 //     <> <Box>
 //       <SimpleGrid
@@ -85,38 +88,11 @@ import { HamburgerIcon } from "@chakra-ui/icons";
 // export default Navbar;
 
 function Navbar() {
-  const initial = [
-    "Girls vs. Stereotypes",
-    "Current Events",
-    "Wallpapers",
-    "3D Renders",
-    "Textures & Patterns",
-    "Experimental",
-    "Architecture",
-    "Nature",
-    "Business & Work",
-    "Fashion",
-    "Film",
-    "Girls vs. Stereotypes",
-    "Current Events",
-    "Wallpapers",
-    "3D Renders",
-    "Textures & Patterns",
-    "Experimental",
-    "Architecture",
-    "Nature",
-    "Business & Work",
-    "Fashion",
-    "Film",
-    "Nature",
-    "Business & Work",
-    "Fashion",
-    "Film",
-  ];
+  
 
-  const [Nav2, SetNav2] = useState(initial);
+  
   const [count, setCount] = useState(0);
-
+  const [value, setvalue] = useState(false);
   return (
     <>
       <div className="Nav-Div">
@@ -130,9 +106,18 @@ function Navbar() {
         </div>
         <div style={{ width: "50%", marginLeft: "-12%" }}>
           <Input
+            onClick={() => setvalue(!value)}
             backgroundColor="#eeeeee"
             placeholder="Search free high-resolution photos"
           ></Input>
+
+          {value ? (
+            <div className="Hamburg">
+              <Dropdown />
+            </div>
+          ) : (
+            ""
+          )}
         </div>
         <div
           style={{
@@ -165,11 +150,19 @@ function Navbar() {
             <Button>Submit a photo</Button>
           </div>
           <div>
-            <HamburgerIcon />
+            <HamburgerIcon onClick={() => setvalue(!value)} />
+
+            {value ? (
+              <div className="Hamburg">
+                <Dropdown />
+              </div>
+            ) : (
+              ""
+            )}
           </div>
         </div>
       </div>
-
+<Navbar2/>
       {/* <Box display="flex" gap="1%" alignItems="center" marginLeft="0.5%">
         <Box>
           <Box>Editorial</Box>

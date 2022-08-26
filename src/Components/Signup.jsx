@@ -4,19 +4,19 @@ import "./Signup.css"
 function Signup() {
   return (
     <>
-      <Box display="flex" marginLeft="2%">
-        <Box className="Sign-up-backgroundimg">
-          <Box  objectFit="cover" marginLeft="3%" >
-            <Heading size="xl" textAlign="left"marginTop="40%" >
+      <Box display="flex"  >
+        <Box className="Sign-up-backgroundimg" >
+          <Box  marginLeft="2%" >
+            <Heading size="xl" textAlign="left" fontSize="35px" marginTop="58%" >
               Creation starts here
             </Heading>
-            <Heading width="60%" size="sm" fontWeight="600"  textAlign="left">
+            <Heading  width="60%" size="sm" fontWeight="600"  textAlign="left" fontSize="18px" >
               Access 4,207,274 free,high-resolution photos you can't find
               anywhere else
             </Heading>
-          </Box>
+          </Box >
 
-          <Text marginTop="45%" textAlign="left" marginLeft="5%" >Uploaded about 3 hours ago by sergey Zigle</Text>
+          <Text   textAlign="left" marginLeft="5%" marginTop="58%">Uploaded about 3 hours ago by sergey Zigle</Text>
         </Box>
 
         <Box marginLeft="10%"  marginTop="11%">
