@@ -7,6 +7,7 @@ import Home from "./Components/Home";
 import MiddleHome from "./Components/MiddleHome";
 import Dropdown from "./Components/Dropdown";
 import Navbar2 from "./Components/Navbar2";
+import Explore from "./Components/Explore";
 
 function App() {
   return (
@@ -20,6 +21,8 @@ function App() {
       {/* <Searchbox/> */}
 
       {/* <Navbar2/> */}
+
+      {/* <Explore/> */}
     </div>
   );
 }

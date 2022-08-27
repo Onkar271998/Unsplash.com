@@ -2,9 +2,10 @@ import { Box, Container, SimpleGrid } from "@chakra-ui/react";
 import axios from "axios";
 import { useEffect } from "react";
 import { useState } from "react";
-import "./Home.css"
+import "./Home.css";
 import MiddleHome from "./MiddleHome";
 import Navbar from "./Navbar";
+import Navbar2 from "./Navbar2";
 import Searchbox from "./Searchbox";
 function Home() {
   const [data, setData] = useState([]);
@@ -25,29 +26,19 @@ function Home() {
   };
 
   return (
-    <>    
-    <Navbar/>
-           
-           {/* <MiddleHome /> */}
+    <>
+      <Navbar />
+      <Navbar2 />
 
-           
-  <Searchbox/>
-        
-        <div className="box" >
-          {data?.map((e) => (
-            
-           
-              <img  src={e.urls.raw} alt="img" />
-              
-                  
-       
-          ))}
-          </div>
-               
-      
-        
-        
-    
+      {/* <MiddleHome /> */}
+
+      <Searchbox />
+
+      <div className="box">
+        {data?.map((e) => (
+          <img src={e.urls.raw} alt="img" />
+        ))}
+      </div>
     </>
   );
 }

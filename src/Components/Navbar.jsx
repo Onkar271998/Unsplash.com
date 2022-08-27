@@ -124,9 +124,10 @@ function Navbar() {
             display: "flex",
             justifyContent: "space-evenly",
             width: "20%",
+            color:"gray"
           }}
         >
-          <div>Explore</div>
+          <div><Link to="/explore">Explore</Link></div>
           <div>Advertise</div>
           <div>Blog</div>
         </div>
@@ -136,6 +137,7 @@ function Navbar() {
             justifyContent: "space-evenly",
             width: "20%",
             alignItems: "center",
+            color:"gray"
           }}
         >
           <div>
@@ -162,7 +164,7 @@ function Navbar() {
           </div>
         </div>
       </div>
-<Navbar2/>
+
       {/* <Box display="flex" gap="1%" alignItems="center" marginLeft="0.5%">
         <Box>
           <Box>Editorial</Box>
