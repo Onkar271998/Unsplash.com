@@ -126,8 +126,8 @@ function Navbar() {
           <div>
             <Link to="/explore">Explore</Link>
           </div>
-          <div>Advertise</div>
-          <div>Blog</div>
+          <div><Link to="/advertise">Advertise</Link></div>
+          <div><Link to="/blog">Blog</Link></div>
         </div>
         <div
           style={{

@@ -8,6 +8,8 @@ import MiddleHome from "./Components/MiddleHome";
 import Dropdown from "./Components/Dropdown";
 import Navbar2 from "./Components/Navbar2";
 import Explore from "./Components/Explore";
+import Blog from "./Components/Blog";
+import Advertise from "./Components/Advertise";
 
 function App() {
   return (
@@ -23,6 +25,10 @@ function App() {
       {/* <Navbar2/> */}
 
       {/* <Explore/> */}
+
+      {/* <Blog/> */}
+
+      {/* <Advertise/> */}
     </div>
   );
 }

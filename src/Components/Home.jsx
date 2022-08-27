@@ -18,7 +18,7 @@ function Home() {
     return axios
 
       .get(
-        "https://api.unsplash.com/search/photos?page=2&query=women&limit=30&client_id=1TDSAOZE_7IRzQX9vcWwVMu-GgV80r3-69flNb9VpIo"
+        "https://api.unsplash.com/search/photos?page=2&query=nature&limit=30&client_id=1TDSAOZE_7IRzQX9vcWwVMu-GgV80r3-69flNb9VpIo"
       )
       .then((res) => {
         setData(res.data.results);
