@@ -88,9 +88,6 @@ import Navbar2 from "./Navbar2";
 // export default Navbar;
 
 function Navbar() {
-  
-
-  
   const [count, setCount] = useState(0);
   const [value, setvalue] = useState(false);
   return (
@@ -106,28 +103,29 @@ function Navbar() {
         </div>
         <div style={{ width: "50%", marginLeft: "-12%" }}>
           <Input
-            onClick={() => setvalue(!value)}
             backgroundColor="#eeeeee"
             placeholder="Search free high-resolution photos"
           ></Input>
 
-          {value ? (
+          {/* {value ? (
             <div className="Hamburg">
               <Dropdown />
             </div>
           ) : (
             ""
-          )}
+          )} */}
         </div>
         <div
           style={{
             display: "flex",
             justifyContent: "space-evenly",
             width: "20%",
-            color:"gray"
+            color: "gray",
           }}
         >
-          <div><Link to="/explore">Explore</Link></div>
+          <div>
+            <Link to="/explore">Explore</Link>
+          </div>
           <div>Advertise</div>
           <div>Blog</div>
         </div>
@@ -137,7 +135,7 @@ function Navbar() {
             justifyContent: "space-evenly",
             width: "20%",
             alignItems: "center",
-            color:"gray"
+            color: "gray",
           }}
         >
           <div>
@@ -152,7 +150,10 @@ function Navbar() {
             <Button>Submit a photo</Button>
           </div>
           <div>
-            <HamburgerIcon onClick={() => setvalue(!value)} />
+            <HamburgerIcon
+              onClick={() => setvalue(!value)}
+              position="relative"
+            />
 
             {value ? (
               <div className="Hamburg">
