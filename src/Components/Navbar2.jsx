@@ -4,7 +4,8 @@ import React, { Component } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import "./Navbar2.css"
+import "./Navbar2.css";
+import { Link } from "react-router-dom";
 function SampleNextArrow(props) {
   const { className, style, onClick } = props;
   return (
@@ -70,57 +71,35 @@ export default class Navbar2 extends Component {
     };
 
     const initial = [
-      
-      
-      "Current Events",
-      
-      "Wallpapers",
-      
-      "3D Renders",
-      
-      "Textures",
-      
-      "Experimental",
-      
-      "Architecture",
-      
-      "Nature",
-      
-      "Business & Work",
-      
-      "Fashion",
-      
-      "Film",
-      
-      
-      
-      "Current Events",
-      
-      "Wallpapers",
-      
-      "3D Renders",
-      
-      "Textures & Patterns",
-      
-      "Experimental",
-      
-      "Architecture",
-      
-      "Nature",
-      
-      "Business & Work",
-      
-      "Fashion",
-      
-      "Film",
-      
-      "Nature",
-      
-      "Business & Work",
-      
-      "Fashion",
-      
-      "Film",
+      <Link to="/commonpage/current-events">Current Events</Link>,
+      <Link to="/commonpage/Wallpapers">Wallpapers</Link>,
+      <Link to="/commonpage/3D Renders">3D Renders</Link>,
+      <Link to="/commonpage/textures-patterns">Textures</Link>,
+      <Link to="/commonpage/Experimental">Experimental</Link>,
+      <Link to="/commonpage/Architecture">Architecture</Link>,
+      <Link to="/commonpage/Nature">Nature</Link>,
+      <Link to="/commonpage/BusinessWork">Business & Work</Link>,
+      <Link to="/commonpage/Fashion">Fashion</Link>,
+      <Link to="/commonpage/Film">Film</Link>,
+      <Link to="/commonpage/food and drink">Food & Drink</Link>,
+      <Link to="/commonpage/HealthWellness">Health & Wellness</Link>,
+      <Link to="/commonpage/Interiors">Interiors</Link>,
+
+      <Link to="/commonpage/StreetPhotography">Street Photography</Link>,
+      <Link to="/commonpage/Travel">Travel</Link>,
+      <Link to="/commonpage/Animals">Animals</Link>,
+      <Link to="/commonpage/Spirituality">Spirituality</Link>,
+      <Link to="/commonpage/Spirituality">Spirituality</Link>,
+
+      <Link to="/commonpage/Experimental">Experimental</Link>,
+      <Link to="/commonpage/Architecture">Architecture</Link>,
+      <Link to="/commonpage/Nature">Nature</Link>,
+      <Link to="/commonpage/BusinessWork">Business & Work</Link>,
+      <Link to="/commonpage/Fashion">Fashion</Link>,
+      <Link to="/commonpage/Film">Film</Link>,
+      <Link to="/commonpage/food and drink">Food & Drink</Link>,
+      <Link to="/commonpage/HealthWellness">Health & Wellness</Link>,
+      <Link to="/commonpage/Interiors">Interiors</Link>,
     ];
 
     return (
@@ -133,7 +112,7 @@ export default class Navbar2 extends Component {
             <Slider {...settings}>
               {initial.map((e) => (
                 <Stack direction={"row"}>
-                  <Text   width="140%">{e}</Text>
+                  <Text width="140%">{e}</Text>
                 </Stack>
               ))}
             </Slider>
