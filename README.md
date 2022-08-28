@@ -1,1 +1,3 @@
-https://capable-frangollo-9285a4.netlify.app/
+https://splendid-brigadeiros-68ada5.netlify.app/
+
+{site contain high resolution pic ,To load picture it may take bit time !!}
