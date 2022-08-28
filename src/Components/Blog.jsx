@@ -1,6 +1,6 @@
 import { Box, Button, Heading, SimpleGrid, Text } from "@chakra-ui/react";
 
-import {Link} from "react-router-dom"
+import { Link } from "react-router-dom";
 import "./Blog.css";
 
 function Blog() {
@@ -11,16 +11,14 @@ function Blog() {
   return (
     <>
       <Box>
-        <Box> 
-
+        <Box>
           <Link to="/">
-          <img
-            width="5%"
-            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAOVBMVEX///8AAAD39/eVlZVhYWHt7e2YmJisrKydnZ3AwMAuLi7V1dWoqKibm5v09PSQkJB1dXUdHR1aWlrVATWbAAABDklEQVR4nO3ZSxaCMAxAUUUFFfG3/8U6t5OAVVLPvQvIyeuw2WwAAAAAAAAAAAAAAELG/hjVj2svu8hlG3dZe9lFhhmFw9rLLqJQYX4KFeanUGF+ChXmp1BhfgoV5qdQYX4KFeanUGF+Ctsv/P/r2jiFL6RTmxdSAAAAIL3rIeC65sAPdbfI79JuxsRdZOCt+1rRuy60UD9jYh96MoX1KFRYUqiwNoUKSwoV1qZQYUmhwtoUKiwpVFibQoUlhQprU6iw1GbhNGPi1GTh/RR3b7LwcY57NFlYnUKFChUqVKhQoUKFChUqVKhQoUKFChUqVKhQoUKFLRYOz/3vPYffFQIAAAAAAAAAAAAAAPyxF6hYLRF9pu91AAAAAElFTkSuQmCC"
-            alt="logo"
-          ></img>
-
-</Link>
+            <img
+              width="5%"
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAOVBMVEX///8AAAD39/eVlZVhYWHt7e2YmJisrKydnZ3AwMAuLi7V1dWoqKibm5v09PSQkJB1dXUdHR1aWlrVATWbAAABDklEQVR4nO3ZSxaCMAxAUUUFFfG3/8U6t5OAVVLPvQvIyeuw2WwAAAAAAAAAAAAAAELG/hjVj2svu8hlG3dZe9lFhhmFw9rLLqJQYX4KFeanUGF+ChXmp1BhfgoV5qdQYX4KFeanUGF+Ctsv/P/r2jiFL6RTmxdSAAAAIL3rIeC65sAPdbfI79JuxsRdZOCt+1rRuy60UD9jYh96MoX1KFRYUqiwNoUKSwoV1qZQYUmhwtoUKiwpVFibQoUlhQprU6iw1GbhNGPi1GTh/RR3b7LwcY57NFlYnUKFChUqVKhQoUKFChUqVKhQoUKFChUqVKhQoUKFLRYOz/3vPYffFQIAAAAAAAAAAAAAAPyxF6hYLRF9pu91AAAAAElFTkSuQmCC"
+              alt="logo"
+            ></img>
+          </Link>
         </Box>
         <SimpleGrid
           columns={[3, 3, 4, 6]}
@@ -34,15 +32,27 @@ function Blog() {
           <Box>
             <Link to="/">Home</Link>
           </Box>
-          <Box>Accouncement</Box>
-          <Box>Products</Box>
-          <Box>Brands</Box>
-          <Box>Partnerships</Box>
-          <Box>Community</Box>
+          <Box>
+            {" "}
+            <Link to="/commonpage/Accouncement">Accouncement</Link>
+          </Box>
+          <Box>
+            {" "}
+            <Link to="/commonpage/Products">Products</Link>
+          </Box>
+          <Box>
+            {" "}
+            <Link to="/commonpage/Brands">Brands</Link>
+          </Box>
+          <Box>
+            {" "}
+            <Link to="/commonpage/Partnerships">Partnerships</Link>
+          </Box>
+          <Box>
+            {" "}
+            <Link to="/commonpage/Community">Community</Link>
+          </Box>
         </SimpleGrid>
-
-
-      
       </Box>
 
       <Box marginTop="6%">
@@ -264,16 +274,7 @@ function Blog() {
         </Box>
       </SimpleGrid>
 
-
-                   <Button>Load more posts</Button>
-
-         
-
-             
-
-            
-
-
+      <Button>Load more posts</Button>
     </>
   );
 }

@@ -1,7 +1,17 @@
 import { Box, Button, Container, Heading, Input, Text } from "@chakra-ui/react";
+import { useNavigate } from "react-router-dom";
 import "./Login.css";
 
-function Login() {
+function Login() { 
+
+  let navigate = useNavigate();
+
+
+
+  const loginclick=()=>{
+    navigate("/")
+  }
+
   return (
     /* <div className="Login_page">
           
@@ -68,7 +78,7 @@ function Login() {
         <Input></Input>
       </Box>  
       </Box> 
-      <Button bgColor="black" width="95%" color="white">Login</Button>
+      <Button bgColor="black" width="95%" color="white" onClick={loginclick}>Login</Button>
 
       <Box marginTop="1%">
         <Text marginTop="2%">Don't have an account? Join Unsplash</Text>

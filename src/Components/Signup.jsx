@@ -1,7 +1,16 @@
 import { Box, Button, Container, Heading, Input, Text } from "@chakra-ui/react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import "./Signup.css"
 function Signup() {
+
+  
+  let navigate = useNavigate();
+
+
+
+  const loginclick=()=>{
+    navigate("/login")
+  }
   return (
     <>
       <Box display="flex"  >
@@ -56,7 +65,7 @@ function Signup() {
             <Input></Input>
           </Box>
           <Box marginTop="4%">
-            <Button bgColor="black" width="95%" color="white">
+            <Button onClick={loginclick} bgColor="black" width="95%" color="white">
               Join
             </Button>
           </Box>
