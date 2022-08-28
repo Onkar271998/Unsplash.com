@@ -20,7 +20,7 @@ function Dropdown() {
   return (
     <> 
     
-      <Box  className="drop-box" >
+      <Box  className="drop-box"  > 
         <SimpleGrid columns={[3, 3, 3, 3]}>
           <Box  >
             <Heading size="sl">Company</Heading>

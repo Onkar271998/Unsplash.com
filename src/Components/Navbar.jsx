@@ -91,151 +91,130 @@ function Navbar() {
   const [count, setCount] = useState(0);
   const [value, setvalue] = useState(false);
   return (
-    <>
-      <Box className="Nav-Div">
-        <Box>
-          <Link to="/">
-            <img
-              style={{ width: "23%" }}
-              src="https://res.cloudinary.com/crunchbase-production/image/upload/c_lpad,h_256,w_256,f_auto,q_auto:eco,dpr_1/tbvbvipimh2camf5nb2q"
-            />
-          </Link>
-        </Box>
-        <Box style={{ width: "50%", marginLeft: "-12%" }}>
-          <Input
-            backgroundColor="#eeeeee"
-            placeholder="Search free high-resolution photos"
-          ></Input>
 
-          {/* {value ? (
-            <Box className="Hamburg">
-              <Dropdown />
-            </Box>
-          ) : (
-            ""
-          )} */}
-        </Box>
-        <Box
-          style={{
-            display: "flex",
-            justifyContent: "space-evenly",
-            width: "20%",
-            color: "gray",
-          }}
-        >
-          <Box>
-            <Link to="/explore">Explore</Link>
-          </Box>
-          <Box><Link to="/advertise">Advertise</Link></Box>
-          <Box><Link to="/blog">Blog</Link></Box>
-        </Box>
-        <Box  
-          style={{
-            display: "flex",
-            justifyContent: "space-evenly",
-            width: "20%",
-            alignItems: "center",
-            color: "gray",
-          }}
-        >
-          <Box>
-            <Link to="/login">Log in</Link>
-          </Box>
-          <Box>/</Box>
-          <Box>
-            <Link to="/signup">Sign Up</Link>
-          </Box>
+<>   
+<Box display="flex" width="100%"   alignContent="center"  >
+<Box >
+    <Link to="/">
+  <img
+    style={{ width: "23%" }}
+    src="https://res.cloudinary.com/crunchbase-production/image/upload/c_lpad,h_256,w_256,f_auto,q_auto:eco,dpr_1/tbvbvipimh2camf5nb2q"
+  />
+</Link>
+      </Box>                
 
-          <Box>
-            <Button>Submit a photo</Button>
-          </Box>
-          <Box>
-            <HamburgerIcon
-              onClick={() => setvalue(!value)}
-              position="relative"
-            />
 
-            {value ? (
-              <Box className="Hamburg">
-                <Dropdown />
-              </Box>
-            ) : (
-              ""
-            )}
-          </Box>
-        </Box>
-      </Box>
 
-      {/* <Box display="flex" gap="1%" alignItems="center" marginLeft="0.5%">
-        <Box>
-          <Box>Editorial</Box>
-        </Box> */}
+<Box display="flex" justifyContent="space-between" marginTop="0.4%" width="85%" alignContent="center" marginLeft="-10%" className="navbar"> 
+             
+                
+              
 
-      {/* <Box>
-          {" "}
-          <Box height="10%">
-            <SimpleGrid
-              columns={[4, 5, 5, 14]}
-              spacing={-1}
-              alignItems="center"
-            >
-              <Button
-                className="Butt"
-                disabled={count < 1}
-                onClick={() => setCount(count - 1)}
-              >
-                {"<"}
-              </Button>
-              <Box textAlign="center">
-                <Text fontSize="80%" width="100%">{Nav2[count]}</Text>
-              </Box>
-              <Box textAlign="center">
-                <Text width="90%">{Nav2[count + 1]}</Text>
-              </Box>
-              <Box textAlign="center">
-                <Text width="90%">{Nav2[count + 2]}</Text>
-              </Box>
-              <Box textAlign="center">
-                <Text width="90%">{Nav2[count + 3]}</Text>
-              </Box>
-              <Box textAlign="center">
-                <Text width="90%">{Nav2[count + 4]}</Text>
-              </Box>
-              <Box textAlign="center">
-                <Text width="90%">{Nav2[count + 5]}</Text>
-              </Box>
-              <Box textAlign="center">
-                <Text width="90%">{Nav2[count + 6]}</Text>
-              </Box>
-              <Box textAlign="center">
-                <Text width="90%">{Nav2[count + 7]}</Text>
-              </Box>
-              <Box textAlign="center">
-                <Text width="90%">{Nav2[count + 8]}</Text>
-              </Box>
-              <Box textAlign="center">
-                <Text width="90%">{Nav2[count + 9]}</Text>
-              </Box>
-              <Box textAlign="center">
-                <Text width="90%">{Nav2[count + 10]}</Text>
-              </Box>
-              <Box textAlign="center">
-                <Text width="90%">{Nav2[count + 11]}</Text>
-              </Box>
-              <Button
-                className="Butt"
-                disabled={count > 11}
-                onClick={() => setCount(count + 1)}
-              >
-                {">"}
-              </Button>
-            </SimpleGrid>
+             <Box  style={{ width: "50%" }}>
+         <Input
+        
+           backgroundColor="#eeeeee"
+           placeholder="Search free high-resolution photos"
+         ></Input>
+</Box>
+<Box marginTop="1%" textAlign="center">
+           <Link to="/explore">Explore</Link>
+         </Box>
 
-            {/* {Nav2[count+1]}{Nav2[count+2]}{Nav2[count+3]}{Nav2[count+4]} */}
-      {/* </Box> */}
-      {/* </Box>  */}
-      {/* // </Box> */}
-    </>
-  );
+         <Box  textAlign="center"marginTop="1%"><Link to="/advertise"  marginTop="1%">Advertise</Link></Box>
+         <Box  textAlign="center"marginTop="1%"><Link to="/blog" >Blog</Link></Box>
+
+         <Box  textAlign="center" marginTop="1%">
+           <Link to="/login">Log in</Link>
+         </Box>
+         <Box marginTop="1%">/</Box>
+         <Box  marginTop="1%" textAlign="center">
+           <Link to="/signup">Sign Up</Link>
+         </Box>
+
+         <Box   textAlign="center">
+           <Button>Submit a photo</Button>
+         </Box>
+
+         <Box  textAlign="center"  >
+           <HamburgerIcon
+             onClick={() => setvalue(!value)}
+             position="relative"
+           />
+
+           {value ? (
+             <Box className="Hamburg" fontSize="18px">
+               <Dropdown />
+             </Box>
+           ) : (
+             ""
+           )}
+         </Box>
+         </Box>
+         
+        
+        
+        
+
+    
+
+ 
+        
+         </Box> 
+
+
+
+
+
+
+
+
+
+</>
+
+  )
 }
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+ 
+     
+
+
+
+  
+
+
+
+
+
+
+
+
+
+       
+       
+        
+  
+
 export default Navbar;
