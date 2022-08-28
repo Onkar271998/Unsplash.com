@@ -106,7 +106,7 @@ export default class Navbar2 extends Component {
       <>
         <Box display="flex">
           <Box>
-            <Text>Editorial</Text>
+           <Text className="underline" as="u"><Link to="/">Editorial</Link></Text>
           </Box>
           <Box width="91%" marginLeft="3%">
             <Slider {...settings}>

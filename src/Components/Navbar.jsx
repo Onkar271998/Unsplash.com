@@ -92,30 +92,30 @@ function Navbar() {
   const [value, setvalue] = useState(false);
   return (
     <>
-      <div className="Nav-Div">
-        <div>
+      <Box className="Nav-Div">
+        <Box>
           <Link to="/">
             <img
               style={{ width: "23%" }}
               src="https://res.cloudinary.com/crunchbase-production/image/upload/c_lpad,h_256,w_256,f_auto,q_auto:eco,dpr_1/tbvbvipimh2camf5nb2q"
             />
           </Link>
-        </div>
-        <div style={{ width: "50%", marginLeft: "-12%" }}>
+        </Box>
+        <Box style={{ width: "50%", marginLeft: "-12%" }}>
           <Input
             backgroundColor="#eeeeee"
             placeholder="Search free high-resolution photos"
           ></Input>
 
           {/* {value ? (
-            <div className="Hamburg">
+            <Box className="Hamburg">
               <Dropdown />
-            </div>
+            </Box>
           ) : (
             ""
           )} */}
-        </div>
-        <div
+        </Box>
+        <Box
           style={{
             display: "flex",
             justifyContent: "space-evenly",
@@ -123,13 +123,13 @@ function Navbar() {
             color: "gray",
           }}
         >
-          <div>
+          <Box>
             <Link to="/explore">Explore</Link>
-          </div>
-          <div><Link to="/advertise">Advertise</Link></div>
-          <div><Link to="/blog">Blog</Link></div>
-        </div>
-        <div
+          </Box>
+          <Box><Link to="/advertise">Advertise</Link></Box>
+          <Box><Link to="/blog">Blog</Link></Box>
+        </Box>
+        <Box  
           style={{
             display: "flex",
             justifyContent: "space-evenly",
@@ -138,33 +138,33 @@ function Navbar() {
             color: "gray",
           }}
         >
-          <div>
+          <Box>
             <Link to="/login">Log in</Link>
-          </div>
-          <div>/</div>
-          <div>
+          </Box>
+          <Box>/</Box>
+          <Box>
             <Link to="/signup">Sign Up</Link>
-          </div>
+          </Box>
 
-          <div>
+          <Box>
             <Button>Submit a photo</Button>
-          </div>
-          <div>
+          </Box>
+          <Box>
             <HamburgerIcon
               onClick={() => setvalue(!value)}
               position="relative"
             />
 
             {value ? (
-              <div className="Hamburg">
+              <Box className="Hamburg">
                 <Dropdown />
-              </div>
+              </Box>
             ) : (
               ""
             )}
-          </div>
-        </div>
-      </div>
+          </Box>
+        </Box>
+      </Box>
 
       {/* <Box display="flex" gap="1%" alignItems="center" marginLeft="0.5%">
         <Box>
