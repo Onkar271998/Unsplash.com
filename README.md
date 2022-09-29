@@ -29,7 +29,7 @@ Unsplash.com Clone is web application from that you can download diffrent types 
 
 <br />
     
-    <h1>Some pf screenshot of project</h1>
+   
 
 
   <img width="60%" src="https://user-images.githubusercontent.com/101565835/192946000-493a2c6f-4710-47f3-bc32-bbfc279dd379.png" alt="home"/>
