@@ -28,14 +28,16 @@ Unsplash.com Clone is web application from that you can download diffrent types 
 <br />
 
 <br />
+    
+    <h1>Some pf screenshot of project</h1>
 
 
-
-  <img src="https://user-images.githubusercontent.com/101565835/192946000-493a2c6f-4710-47f3-bc32-bbfc279dd379.png" alt="home"/>
- <img src="https://user-images.githubusercontent.com/101565835/192946253-fbdff0d9-ebe9-455a-a5e0-e600b4e64def.png" alt="Login" />
- <img src="https://user-images.githubusercontent.com/101565835/192944759-7f7ee5b9-8328-4172-b255-692127adf0ed.png" alt="blog"/>
- <img src="https://user-images.githubusercontent.com/101565835/192945070-bec4db87-92b9-461b-84ec-b16ae8cc3f85.png" />
- 
+  <img width="60%" src="https://user-images.githubusercontent.com/101565835/192946000-493a2c6f-4710-47f3-bc32-bbfc279dd379.png" alt="home"/>
+ <img width="60%" src="https://user-images.githubusercontent.com/101565835/192946253-fbdff0d9-ebe9-455a-a5e0-e600b4e64def.png" alt="Login" /
+ <img width="60%" src="https://user-images.githubusercontent.com/101565835/192944759-7f7ee5b9-8328-4172-b255-692127adf0ed.png" alt="blog"/>
+ <img width="60%" src="https://user-images.githubusercontent.com/101565835/192945070-bec4db87-92b9-461b-84ec-b16ae8cc3f85.png" />
+ <img  width="60%" src="https://user-images.githubusercontent.com/101565835/192953030-e35aa05c-cacc-4fe2-839b-9ad764831db9.png"/>
+ <img width="60%" src="https://user-images.githubusercontent.com/101565835/192953563-bdca57b2-b8a0-4548-90a1-a4a7d113ff87.png"/>
  
 
 <br />
